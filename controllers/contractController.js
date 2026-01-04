@@ -10,7 +10,7 @@ const createContract = async (req, res) => {
 
   // 1. Validation
   if (!jobId || !freelancerId || !amount) {
-    return res.status(400).json({ message: 'Missing required fields' });
+    return res.status(400).json({ message: 'Missing required fields! Please field all details' });
   }
 
   // 2. Create the Contract (Status: "new")
