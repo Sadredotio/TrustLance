@@ -91,7 +91,7 @@ const releaseFunds = async (req, res) => {
 
     // Verify User is the Client
     if (contract.clientId.toString() !== req.user.id) {
-      return res.status(401).json({ message: 'Not authorized' });
+      return res.status(401).json({ message: 'Not authorized!Use correct credentials' });
     }
 
     // --- THE RELEASE LOGIC ---
